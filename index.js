@@ -20,7 +20,7 @@ app.use("/", Routes);
 
 const USERNAME = process.env.DB_USERNAME;
 const PASSWORD = process.env.DB_PASSWORD;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8001;
 
 // Connecting to the database
 Connection(USERNAME, PASSWORD);
